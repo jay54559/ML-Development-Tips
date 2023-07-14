@@ -199,7 +199,7 @@ Prefer using method number 2 as it allows you to have a centralized configuratio
 5. Install the necessary dependencies. They go in _tool.poetry.dependencies_ in the _poetry.toml_ file with their names and constraints. Poetry searches them on package repos or PyPI. Instead of manual additions to the file, it is advisable to do the following:
 
     ```
-    poetry add dvc dvclive ipykernel jupyter jupyter_contrib_nbextensions numpy pandas matplotlib pre-commit pylint pytest python-box pyyaml seaborn scikit-learn scipy tqdm types-PyYAML
+    poetry add dvc dvclive h5py ipykernel jupyter jupyter_contrib_nbextensions matplotlib numpy pandas pre-commit pylint pytest python-box pyyaml seaborn scikit-learn scipy torchsummary tqdm types-PyYAML
     ```
 
     For getting dvc with remote storage supported, install the dvc package with the storage you need enabled. For example, `dvc-s3` for working with Amazon S3. Also, you may have to manually edit the python version in pyproject.toml to ensure certain dependencies get installed.
